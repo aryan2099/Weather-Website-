@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to left top, rgb(242, 255, 56),rgb(2, 217, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    text-align: center;
+    border: solid  1px black;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255, .1);
+    width: 30%;
+    position: relative;
+    height: auto;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    text-shadow: -2px 0 greenyellow, 0 2px greenyellow, 2px 0 greenyellow, 0 -2px greenyellow;
+}
+.search-box{
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 25px;
+    align-items: center;
+    border: solid 1px;
+}
+.search-box i:hover{
+    color: blue;
+}
+.search-box:hover{
+    border: solid 2px red;
+    transition: ease .3s;
+    cursor: pointer;
+}
+#SearchIcon:hover{
+    color: blue;
+    transition: ease .3s;
+    cursor: pointer;
+}
+input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+.loc{
+    position: absolute;
+    left: 7px;
+}
+.e{
+    visibility: hidden;
+    margin-top: 0px;
+}
+
+.weather-details1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+img{
+    width: 30%;
+}
+.temp,.degree{
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+.info{
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#i1{
+    display: none;
+}
+.weather-details2{
+    display: grid;
+    gap: 35px;
+    margin-left: 60px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+.flex{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex p{
+    margin-left: 10px;
+}
+
+
+/* @media (max-width: 767px) and (orientation: portrait){
+    .container{
+        width: fit-content;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; 
+    }
+
+    .search-box {
+        padding: 10px;
+        padding-left: 25px; 
+    }
+
+    img {
+        width: 60%; 
+    }
+
+    .weather-details2 {
+        margin-left: 0; 
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeatherApp</title>
+        <link rel="stylesheet" href="weather.css">
+        <script src="https://kit.fontawesome.com/96be32af31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather</h1>
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot loc"></i>
+            <input style="text-transform: capitalize;" type="text" id="search-input" placeholder="Enter a Location">
+            <i id="SearchIcon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="error"><h2 class="e">Error, City Not Found</h2></div>
+        <div id="i2" class="weather-details1">
+            <h2 class="name"></h2>
+            <img id="img" src="">
+            <p ><strong class="temp"></strong></p>
+            <p class="info"></p>
+        </div>
+        <div id="i1" class="weather-details2">
+            <div class="humidity">
+                <div class="flex">
+                    <i class="fa-solid fa-droplet fa-2xl"></i>
+                    
+                     <p class="humidity1"></p>
+                </div>
+            </div>
+            <div class="pressure">
+                <div class="flex">
+                    <i class="fa-solid fa-water fa-2xl"></i>
+                <p class="pressure1"></p>
+                </div>
+            </div>
+            <div class="speed">
+                <div class="flex">
+                    <i class="fa-solid fa-wind fa-2xl"></i>
+                <p class="speed1"></p>
+                </div>
+            </div>
+            <div class="feel">
+                <div class="flex">
+                    <i class="fa-solid fa-temperature-half fa-2xl"></i>
+                <p class="feel1"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./weather.js"></script>
+
+
+</body>
+</html>
